@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import slaq from "./images/slaq.png";
 import Usflag from "./images/usflag.png";
 import cart from "./images/shopping-cart 1.png";
@@ -9,6 +9,10 @@ function Header() {
   const [change, setChange] = useState(false);
   const [openCart, setOpenCart] = useState(false);
   const [cahngeFlag, setChangeFlag] = useState(Usflag);
+
+  useEffect(() => {
+    console.log("redner");
+  }, [cahngeFlag]);
   return (
     <header>
       <div className="header-nav">

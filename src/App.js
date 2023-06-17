@@ -9,6 +9,9 @@ function App() {
     <div>
       <Header />
       <Main />
+      <div>
+        <button className="registerBtn">Order</button>
+      </div>
       <Footer />
     </div>
   );
